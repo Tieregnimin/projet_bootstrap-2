@@ -1,0 +1,14 @@
+/* Transition plus douce */
+    .carousel-container {
+      transition: transform 1s ease; /* Transition plus lente et douce */
+    }
+
+    /* Effet de fondu entre les slides */
+    .carousel-item {
+      opacity: 0;
+      transition: opacity 1s ease; /* Animation de fondu */
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+    }

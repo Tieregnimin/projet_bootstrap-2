@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique en ligne</title>
+  <!-- Lien vers Tailwind CSS CDN -->
+   <link rel="stylesheet" href="style/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.js"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+
+  <!-- En-tête -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Kabowd Informatique</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#produits" class="hover:text-yellow-300">Produits</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+          <li><a href="#a-propos" class="hover:text-yellow-300">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Carrousel -->
+  <div class="relative w-full max-w-3xl overflow-hidden">
+    <!-- Les items du carrousel -->
+    <div class="carousel-container flex transition-transform duration-300">
+      <!-- Slide 1 -->
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="img/slide_pc_portable_600x300.jpg" alt="Slide 1" class="w-full h-auto">
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="img/slide_canon_gx_600x300.jpg" alt="Slide 2" class="w-full h-auto">
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="img/slide_epson_600x300.jpg" alt="Slide 3" class="w-full h-auto">
+      </div>
+    </div>
+
+    <!-- Boutons de navigation -->
+    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full focus:outline-none" id="prevBtn">
+      &lt;
+    </button>
+    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full focus:outline-none" id="nextBtn">
+      &gt;
+    </button>
+  </div>
+
+  <!-- Section Produits -->
+  <section id="produits" class="p-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-8">Nos Produits</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Fiche Produit 1 -->
+        <div class="bg-white shadow-lg p-4 rounded-lg">
+          <img src="img/hp_laptop_15_i7_300x300.jpg" alt="Produit 1" class="w-full h-64 object-cover rounded-md mb-4">
+          <h3 class="font-semibold text-lg">PC PORTABLE HP NOTEBOOK 15-DW3043NK</h3>
+          <p class="text-gray-600 mb-1">Core I7-1165G7 - 2.80GHZ - 16GB RAM - 1TB  Disk dur SSD - Ecran 15.6'' - Clavier azerty - WIN11.</p>
+          <p class="font-semibold text-red-600 text-lg">PRIX:650.000FCFA</p>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Acheter maintenant</a>
+        </div>
+        <!-- Fiche Produit 2 -->
+        <div class="bg-white shadow-lg p-4 rounded-lg">
+          <img src="img/hp_laptop_15_i5_300x300.jpg" alt="Produit 2" class="w-full h-64 object-cover rounded-md mb-4">
+          <h3 class="font-semibold text-lg">PC PORTABLE HP LAPTOP 15-DW4007NK</h3>
+          <p class="text-gray-600 mb-4">Core i5-1235U-12E GEN-CORE - 8GO - 512Go SSD - Ecran 15.6'' - Clavier azerty - WIN11.</p>
+          <p class="font-semibold text-red-600 text-lg">PRIX:450.000FCFA</p>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Acheter maintenant</a>
+        </div>
+        <!-- Fiche Produit 3 -->
+        <div class="bg-white shadow-lg p-4 rounded-lg">
+          <img src="img/hp_laptop_15_i5_300x300_1.jpg" alt="Produit 3" class="w-full h-64 object-cover rounded-md mb-4">
+          <h3 class="font-semibold text-lg">PC PORTABLE HP LAPTOP 15-DW3011NK</h3>
+          <p class="text-gray-600 mb-4">Intel Core i5-1137G5 – RAM 8Go – 1To SSD– Ecran HD 15.6″ – Windows 11.</p>
+          <p class="font-semibold text-red-600 text-lg">PRIX:450.000FCFA</p>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Acheter maintenant</a>
+        </div>
+        <!-- Fiche Produit 4 -->
+        <div class="bg-white shadow-lg p-4 rounded-lg">
+          <img src="img/hp_laptop_15_i3_300x300.jpg" alt="Produit 4" class="w-full h-64 object-cover rounded-md mb-4">
+          <h3 class="font-semibold text-lg">HP PC Portable 15-FD0061NK</h3>
+          <p class="text-gray-600 mb-4">Core i3 - N305 - 8GB DDR4 - 512GB SSSD M2 - 15.6" - FreeDos - Laptop - Full HD - Notebook - Intel.</p>
+          <p class="font-semibold text-red-600 text-lg">PRIX:350.000FCFA</p>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Acheter maintenant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-blue-600 text-white p-6 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Kabowd Informatique. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+ <!-- Lien vers le fichier JavaScript -->
+ <script src="javascript/js/script.js"></script>
+</body>
+</html>
